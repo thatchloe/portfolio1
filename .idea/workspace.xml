@@ -7,7 +7,6 @@
     <list default="true" id="a5fddf03-2f74-4add-b626-8ffa372faf17" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/templates/base/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/base/templates/base/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/cert.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/cert.mp4" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

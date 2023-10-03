@@ -14,7 +14,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+ 
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -27,12 +27,14 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
 	<link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
 
     <!-- Spinner Start -->
+
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
@@ -41,24 +43,27 @@
     </br></br>
 
     <!-- Header Start -->
-    <div class="container-fluid bg-light my-6 mt-0" id="home">
-        {% include 'base/navbar.html' %}
+
+  
+    {% include 'base/navbar.html' %}
+    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://media.istockphoto.com/id/1224972179/es/foto/fondos-de-esfera-y-concepto-de-planeta.jpg?s=1024x1024&w=is&k=20&c=57AGKDsM_eDho02xJa7IEVoXTNZJTqMPyp2W4hs8YKM=);">
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-7 py-6 pb-0 pt-lg-0">
                     <h3 class="text-primary mb-3">Hi, I'm</h3>
                     <h3 class="display-4 mb-3">Hoang Anh</h3>
                     <h2 class="typed-text-output d-inline"></h2>
-                    <div class="typed-text d-none">Junior Programmer, Web Developer</div>
+                    <div class="typed-text d-none">Junior Software Developer, AI enthusiast</div>
                     <div class="d-flex align-items-center pt-5">
                         <a href="{% static 'resume.pdf' %}" class="btn btn-primary py-3 px-4 me-5">Download CV</a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <img class="img-fluid" src="images/profile.jpeg" alt="">
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- Header End --><!-- About Start -->
     <div class="container-xxl py-6" id="about">
@@ -69,9 +74,9 @@
                         <h3 class="display-6 mb-0">About Me</h3>
                     </div>
                     <div>
-                    <p class="mb-4">I'm a self-driven and open-minded developer, based in sunny Barcelona. I have passion for machine learning and software development</p>
-                    <p class="mb-4"> Having lived abroad for a few years has taught me many precious life experience, also gives me a can-do mindset and resilient character</p>
-					<p class="mb-4"> I'm also a curious and fast learner. While I enjoy building new projects, I am in search of opportunity to work, learn and develop professionally.</p>
+                    <p class="mb-4">I'm a self-driven and passionate developer, based in sunny Barcelona. I have passion for machine learning and software development</p>
+                    <p class="mb-4">I studied Computer Engineering in university of Valladolid, Spain, after that I started my internship as a Software engineering Intern. In my free time I love enhancing my knowledge by online resources such as Udacity, Udemy, Coursera, edX and do my individual projects in web development, machine learning and data science</p>
+					<p class="mb-4"> I have strong skill in Python and developing. Moreover, I also have strong problem-solving skills, analytical thinking. I am data-curious and always in search of new challenges. I'm actively seeking for opportunity to work and grow professionally in the field of AI and software development</p>
                     </div>
                 </div>
                 <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.05s">
@@ -214,7 +219,6 @@
                 </div>
                 <div class="col-lg-6 text-lg-end">
                     <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
-                        <li class="mx-3 active" data-filter=".*">All</li>
                         <li class="mx-3" data-filter=".first">Projects</li>
                         <li class="mx-3" data-filter=".second">Certificates</li>
                         <li class="mx-3" data-filter=".third">Research</li>
@@ -254,7 +258,7 @@
                         <img class="img-fluid" src="images/cert.png" alt="">
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="images/cert.mp4" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+
                         </div>
                     </div>
                 </div>
@@ -272,7 +276,7 @@
                         <img class="img-fluid" src="img/project-5.jpg" alt="">
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+
                         </div>
                     </div>
                 </div>

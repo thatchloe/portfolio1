@@ -5,9 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5fddf03-2f74-4add-b626-8ffa372faf17" name="Changes" comment="commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/templates/base/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/base/templates/base/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/Dennis.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/follow.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/images/dash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/images/ecom.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/images/filter.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/images/membership_site.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/images/membership_site_rGviW6n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/images/personal blog 5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/images/personal-blog.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/images/youtube.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/personal-blog.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/placeholder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/uploads/2020/07/29/40k-website.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/uploads/2020/07/29/book-tablet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/uploads/2020/07/29/youtube.JPG" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -69,7 +69,7 @@
     <div class="container-xxl py-6 pb-6" id="skill">
         <div class="container">
             <div class="row g-8">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.05s">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.005s">
                     <h3 class="display-6 mb-0">Skills & Experience</h3>
                     <p class="mb-4">Here is some of my skill sets</p>
                     <div class="row align-items-center">
@@ -147,7 +147,7 @@
 
                 </div>
 
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.05s">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.005s">
                     <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
                         <li class="nav-item w-50">
                             <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill" href="#tab-1">Experience</button>
@@ -195,113 +195,54 @@
 
     <!-- Expertise End -->
 <!-- Projects Start -->
-    <div class="container-xxl py-6 pt-6" id="project">
-        <div class="container">
-            <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.05s">
-                <div class="col-lg-6">
-                    <h3 class="display-6 mb-0">My Projects</h3>
-                </div>
-                <div class="col-lg-6 text-lg-end">
-                    <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
-                        <li class="mx-3" data-filter=".first">Projects</li>
-                    </ul>
-                </div>
+<div class="container-xxl py-6 pt-6" id="project">
+    <div class="container">
+        <div class="row g-5 mb-5 align-items-center">
+            <div class="col-lg-6">
+                <h3 class="display-6 mb-0">My Projects</h3>
             </div>
-            <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.05s">
-                <div class="col-lg-4 col-md-6 portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="images/project-1.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="images/project-1.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://music-fyyur.herokuapp.com"><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                    <br/>
-                    <h6> Music booking web app </h6>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="images/project-2.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="images/project-2.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://codegen.herokuapp.com"><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                    <br/>
-                    <h6> Code generator web app </h6>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="images/project-3.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="images/project-3.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://thatchloe-ml-webapp-app-9afu0o.streamlit.app/"><i class="fa fa-link"></i></a>
-                        </div>
-                    
-                    </div>
-                    <br/>
-                    <h6> ML streeamlit app </h6>
-                </div>
-                <div class="col-lg-4 col-md-4 portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="images/cert.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="images/cert.mp4" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+            
+        </div>
 
-                        </div>
-                    </div>
-                    <br/>
-                    <h6> Certificates </h6>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first">
+        <div class="row g-4">
+            {% for project in projects %}
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.005s">
                     <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="images/project-4.png" alt="">
+                        <img class="img-fluid" src="{{ project.image.url }}" alt="">
                         <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="images/project-4.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://www.kaggle.com/code/doubleshield/turmor-diagnosis-eda"><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="{{ project.image.url }}" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="{{ project.link }}"><i class="fa fa-link"></i></a>
                         </div>
                     </div>
                     <br/>
-                    <h6> Turmor diagnosis EDA </h6>
+                    <h6>{{ project.title }}</h6>
                 </div>
-                
-                    <div class="col-lg-4 col-md-6 portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="images/project-6.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="images/project-6.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://www.kaggle.com/code/doubleshield/extract-stock-sentiment-from-news-headlines"><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                    <br/>
-                    <h6> Extract stock sentiment from News headlines </h6>
-                </div>
-             
-                    <div class="col-lg-4 col-md-6 portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="images/project-7.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="images/project-7.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://www.kaggle.com/code/doubleshield/car-prices"><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                    <br/>
-                    <h6> Car Price Prediction </h6>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="images/project-8.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="images/project-8.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://stockdash-b35291054370.herokuapp.com"><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                    <br/>
-                    <h6> Investment tracking Dashboard</h6>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
+    <br/><br/>
+    <div class="pagination">
+        {% if projects.has_previous %}
+            <a href="?page=1">&laquo;</a>
+            <a href="?page={{ projects.previous_page_number }}">previous</a>
+        {% endif %}
+
+        {% for i in projects.paginator.page_range %}
+            {% if projects.number == i %}
+                <a href="#" class="active">{{ i }}</a>
+            {% else %}
+                <a href="?page={{ i }}">{{ i }}</a>
+            {% endif %}
+        {% endfor %}
+
+        {% if projects.has_next %}
+            <a href="?page={{ projects.next_page_number }}">next</a>
+            <a href="?page={{ projects.paginator.num_pages }}">&raquo;</a>
+        {% endif %}
+    </div>
+</div>
+
+            
     <!-- Projects End -->
 
     <!-- Contact Start -->

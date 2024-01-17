@@ -19,10 +19,21 @@ from .models import *
 # Create your views here.
 
 def home(request):
-	posts = Post.objects.filter(active=True, featured=True)[0:3]
-
-	context = {'posts':posts}
-	return render(request, 'base/index.html', context)
+    projects = Project.objects.all()
+    
+    page = request.GET.get('page')
+    paginator = Paginator(projects, 6)
+    
+    try:
+        projects = paginator.page(page)
+    except PageNotAnInteger:
+        projects = paginator.page(1)
+    except EmptyPage:
+        projects = paginator.page(paginator.num_pages)
+    
+    context = {'projects':projects}
+    
+    return render(request, 'base/index.html', context)
 
 def posts(request):
 	posts = Post.objects.filter(active=True)
@@ -31,7 +42,7 @@ def posts(request):
 
 	page = request.GET.get('page')
 
-	paginator = Paginator(posts, 5)
+	paginator = Paginator(posts, 6)
 
 	try:
 		posts = paginator.page(page)
@@ -206,3 +217,11 @@ def updateProfile(request):
 
 	context = {'form':form}
 	return render(request, 'base/profile_form.html', context)
+
+def listing(request):
+    contact_list = Contact.objects.all()
+    paginator = Paginator(contact_list, 25)  # Show 25 contacts per page.
+
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
+    return render(request, "list.html", {"page_obj": page_obj})

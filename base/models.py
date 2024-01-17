@@ -24,6 +24,14 @@ class Profile(models.Model):
 			name += ' ' + str(self.last_name)
 		return name
 
+class Project(models.Model):
+    title = models.CharField(max_length=200, blank=True, null=True)
+    link = models.URLField(max_length=200, blank=True)
+    image = models.ImageField(upload_to='images/', blank=True)
+
+    def __str__(self):
+        return self.title
+
 class Tag(models.Model):
 	name = models.CharField(max_length=200)
 
